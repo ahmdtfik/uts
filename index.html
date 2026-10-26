@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita - Sekolah 45</title>
+    <!-- Menggunakan Tailwind CSS via CDN untuk desain modern dan praktis -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold tracking-tight"><a href="#">WARTA SEKOLAH 45</a></h1>
+                <p class="text-xs text-blue-200">berita.sekolah45.my.id</p>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-300 transition">Beranda</a>
+                <a href="#kategori" class="hover:text-blue-300 transition">Kategori</a>
+                <a href="#berita" class="hover:text-blue-300 transition">Berita Terbaru</a>
+            </nav>
+            <!-- Tautan Integrasi ke Web Utama -->
+            <a href="https://sekolah45.my.id" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded font-semibold hover:bg-yellow-400 transition">
+                Web Utama Sekolah
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section / Berita Utama -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Berita Utama" class="w-full md:w-2/3 h-64 md:h-auto object-cover">
+            <div class="p-6 md:w-1/3 flex flex-col justify-center">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Prestasi Siswa</span>
+                <h2 class="text-3xl font-bold mb-4 leading-tight">Siswa Kami Raih Medali Emas Olimpiade Sains Nasional 2026</h2>
+                <p class="text-gray-600 mb-4 line-clamp-3">Tim Olimpiade Sains Sekolah 45 berhasil menyisihkan ratusan peserta dari berbagai daerah dan membawa pulang medali emas...</p>
+                <a href="#" class="text-blue-600 font-bold hover:underline mt-auto">Baca selengkapnya &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Kategori -->
+    <section id="kategori" class="container mx-auto px-4 py-6">
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="#" class="px-6 py-2 bg-blue-100 text-blue-800 rounded-full font-medium hover:bg-blue-200 transition">Semua</a>
+            <a href="#" class="px-6 py-2 text-gray-600 bg-white border rounded-full font-medium hover:bg-gray-50 transition">Pengumuman</a>
+            <a href="#" class="px-6 py-2 text-gray-600 bg-white border rounded-full font-medium hover:bg-gray-50 transition">Agenda Kegiatan</a>
+            <a href="#" class="px-6 py-2 text-gray-600 bg-white border rounded-full font-medium hover:bg-gray-50 transition">Prestasi Siswa</a>
+            <a href="#" class="px-6 py-2 text-gray-600 bg-white border rounded-full font-medium hover:bg-gray-50 transition">Informasi Sekolah</a>
+        </div>
+    </section>
+
+    <!-- Daftar Berita / Grid -->
+    <section id="berita" class="container mx-auto px-4 py-8">
+        <h3 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 mb-6 inline-block">Informasi Terbaru</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card Berita 1 -->
+            <div class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-red-500 uppercase">Pengumuman</span>
+                    <h4 class="text-xl font-bold mt-2 mb-2"><a href="#" class="hover:text-blue-600">Jadwal Ujian Akhir Semester Genap</a></h4>
+                    <p class="text-sm text-gray-500 mb-3">26 Oktober 2026</p>
+                    <p class="text-gray-600 text-sm">Diberitahukan kepada seluruh siswa bahwa UAS akan dilaksanakan mulai pekan depan. Harap persiapkan diri dengan baik.</p>
+                </div>
+            </div>
+
+            <!-- Card Berita 2 -->
+            <div class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-green-500 uppercase">Agenda Kegiatan</span>
+                    <h4 class="text-xl font-bold mt-2 mb-2"><a href="#" class="hover:text-blue-600">Peringatan Hari Guru Nasional & Porseni</a></h4>
+                    <p class="text-sm text-gray-500 mb-3">25 November 2026</p>
+                    <p class="text-gray-600 text-sm">Sekolah akan mengadakan lomba antar kelas dan upacara bendera khusus untuk merayakan Hari Guru Nasional tahun ini.</p>
+                </div>
+            </div>
+
+            <!-- Card Berita 3 -->
+            <div class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-blue-500 uppercase">Informasi Sekolah</span>
+                    <h4 class="text-xl font-bold mt-2 mb-2"><a href="#" class="hover:text-blue-600">Peresmian Laboratorium Komputer Baru</a></h4>
+                    <p class="text-sm text-gray-500 mb-3">20 Oktober 2026</p>
+                    <p class="text-gray-600 text-sm">Fasilitas baru berupa 40 unit komputer dan jaringan internet cepat resmi beroperasi untuk mendukung pembelajaran digital.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <h4 class="text-white font-bold text-lg">Sekolah 45</h4>
+                <p class="text-sm mt-1">Mencetak Generasi Berprestasi & Berakhlak Mulia</p>
+            </div>
+            <div class="space-x-4 text-sm">
+                <a href="https://sekolah45.my.id" class="hover:text-white transition">Website Profil Sekolah</a>
+                <a href="#" class="hover:text-white transition">Kontak Kami</a>
+                <a href="#" class="hover:text-white transition">Login Admin</a>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-gray-700 pt-4">
+            &copy; 2026 Portal Berita Sekolah 45. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
